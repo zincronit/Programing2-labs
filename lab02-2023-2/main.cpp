@@ -29,5 +29,27 @@ int main()
                           dni_orders_count,
                           orders_date);
 
+    // std::cout << orders_date[0] << std::endl;
+    // std::cout << orders_code[0][2][2] << std:: endl;
+    print_data_orders_file("Reports/test-report-orders.csv",
+                             orders_code,
+                            dni_orders_count,
+                             orders_date);
+
+    print_final_report("Reports/final-report.csv",
+                         products,
+                         stock,
+                         prices,
+                         orders_code,
+                         dni_orders_count,
+                        orders_date);
+
+    print_test_report_products("Reports/final-report-products.csv",
+                               products,
+                               stock,
+                               prices);
+
+
+
     return 0;
 }
