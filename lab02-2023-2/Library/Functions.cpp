@@ -464,6 +464,7 @@ void print_final_report(const char* filepath,
     std::ofstream fout;
     open_output_file(fout, filepath);
     print_title(fout, "ORDER DELIVERY REPORT");
+    fout << std::fixed << std::setprecision(2);
     for (int i = 0; orders_date[i]; i++)
     {
         print_header(fout, orders_date[i]);
