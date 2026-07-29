@@ -10,7 +10,7 @@
 #include <fstream>
 #include <cstring>
 
-#define LINE_WIDTH 120
+#define LINE_WIDTH 100
 #define COLUMNS 3
 #define NOT_FOUND -1
 #define TEXT_LENGTH 100

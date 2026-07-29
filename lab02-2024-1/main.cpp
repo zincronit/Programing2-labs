@@ -20,10 +20,20 @@ int main()
     int** orders_by_customer;
     bool** completed_orders;
 
-    // bool hola{};
-    // std::cout << hola << std::endl;
+    read_orders_file("Data/orders.txt",
+                     books_by_order,
+                     orders_by_customer,
+                     completed_orders,
+                     books,
+                     stock);
 
+    order_delivery_report("Reports/order-delivery-report.txt",
+                             books_by_order,
+                             orders_by_customer,
+                             completed_orders);
 
-
+    print_data_from_books_file("Reports/update-report-books.txt",
+                               books,
+                               stock);
     return 0;
 }

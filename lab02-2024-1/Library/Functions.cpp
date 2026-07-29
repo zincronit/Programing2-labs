@@ -96,7 +96,7 @@ int* read_stock(std::ifstream& fin)
     return stock;
 }
 
-void copy_data_books(char*** books,
+void allocate_exact_data(char*** books,
                      int** stock,
                      char*** static_books,
                      int** static_stock,
@@ -124,13 +124,13 @@ void read_books_file(const char* filepath,
         static_books[books_count] = read_data_from_book(fin);
         if (fin.eof()) break;
         static_stock[books_count] = read_stock(fin);
-        double trosh = read_double(fin, true);
+        double ignore_price = read_double(fin, true);
         books_count++;
     }
     // initialize
     books = new char**[books_count + 1]{};
     stock = new int*[books_count + 1]{};
-    copy_data_books(books,
+    allocate_exact_data(books,
                     stock,
                     static_books,
                     static_stock,
@@ -138,7 +138,7 @@ void read_books_file(const char* filepath,
     fin.close();
 }
 
-void print_information_book(std::ofstream& fout,
+void print_book_details(std::ofstream& fout,
                             char** books,
                             int* stock)
 {
@@ -165,7 +165,14 @@ void print_data_from_books_file(const char* filepath,
     print_text(fout, "UNSERVED QUANTITY", width);
     fout << std::endl;
     print_line(fout, 150, '-');
-    for (int i = 0; books[i]; i++) print_information_book(fout, books[i], stock[i]);
+    for (int i = 0; books[i]; i++) print_book_details(fout, books[i], stock[i]);
+}
+
+void read_book_code(std::ifstream& fin, char*& book_code)
+{
+    char buffer[LINE_WIDTH]{};
+    fin >> buffer;
+    book_code = assign_string(buffer);
 }
 
 char** read_data_order(std::ifstream& fin, int& books_count)
@@ -175,9 +182,8 @@ char** read_data_order(std::ifstream& fin, int& books_count)
     while (true)
     {
         // is_end_of_line = fin.get() == '\n';
-        fin >> std::ws;
         if (fin.get() == '\n') break;
-        fin >> books[books_count];
+        read_book_code(fin, books[books_count]);
         books_count++;
     }
     // bool has_books = books_count != 0;
@@ -185,9 +191,9 @@ char** read_data_order(std::ifstream& fin, int& books_count)
     return books;
 }
 
-bool has_same_dni(int dni, int* static_orders_by_customer)
+bool has_same_dni(int dni, int* customer_record)
 {
-    return dni == static_orders_by_customer[1];
+    return dni == customer_record[0];
 }
 
 int find_index_customer(int dni, int** static_orders_by_customer, int customers_count)
@@ -218,21 +224,23 @@ void append_new_order_to_existing_customer(int* static_orders_by_customer, int o
     orders_count++;
 }
 
-void update_orders_by_customer(int* static_orders_by_customer, int* orders_by_customer)
+void update_orders_by_customer(int* static_orders_by_customer, int* & orders_by_customer)
 {
     int orders_count = static_orders_by_customer[1];
     orders_by_customer = new int[orders_count + 3]{};
-    for (int i = 0; i < orders_count; i++)
+    for (int i = 0; i < orders_count + 2; i++)
     {
         orders_by_customer[i] = static_orders_by_customer[i];
     }
 }
 
-void update_books_by_order(char** books_by_order,
+void update_books_by_order(char** & books_by_order,
                            char** static_books_by_order,
-                           int books_count)
+                           int books_count,
+                           bool* & completed_orders)
 {
     books_by_order = new char*[books_count + 1]{};
+    completed_orders = new bool[books_count + 1]{};
     for (int i = 0; i < books_count; i++)
     {
         books_by_order[i] = static_books_by_order[i];
@@ -241,6 +249,7 @@ void update_books_by_order(char** books_by_order,
 
 void copy_orders_data(char*** books_by_order,
                       int** orders_by_customer,
+                      bool** completed_orders,
                       int customers_count,
                       int orders_count,
                       int* books_count,
@@ -257,7 +266,8 @@ void copy_orders_data(char*** books_by_order,
     {
         update_books_by_order(books_by_order[i],
                               static_books_by_order[i],
-                              books_count[i]);
+                              books_count[i],
+                              completed_orders[i]);
         delete [] static_books_by_order[i];
     }
 }
@@ -265,7 +275,9 @@ void copy_orders_data(char*** books_by_order,
 void read_orders_file(const char* filepath,
                       char*** & books_by_order,
                       int** & orders_by_customer,
-                      bool** & completed_orders)
+                      bool** & completed_orders,
+                      char*** books,
+                      int** stock)
 {
     std::ifstream fin;
     open_input_file(fin, filepath);
@@ -281,6 +293,8 @@ void read_orders_file(const char* filepath,
         if (fin.eof()) break;
         fin >> dni;
         static_books_by_order[order_code - 1] = read_data_order(fin, books_count[order_code - 1]);
+        char temp[TEXT_LENGTH]{};
+        // std::strcpy(temp, books_by_order[order_code - 1][0]);
         orders_count++;
         int index_customer = find_index_customer(dni, static_orders_by_customer, customers_count);
         if (index_customer == NOT_FOUND)
@@ -291,11 +305,157 @@ void read_orders_file(const char* filepath,
                                            customers_count);
         }
         else append_new_order_to_existing_customer(static_orders_by_customer[index_customer], order_code);
-        // initialize
-        books_by_order = new char**[orders_count + 1];
-        orders_by_customer = new int*[customers_count + 1];
-        completed_orders = new bool*[orders_count + 1];
-        ///////
     }
+    // initialize
+    books_by_order = new char**[orders_count + 1];
+    orders_by_customer = new int*[customers_count + 1];
+    completed_orders = new bool*[orders_count + 1];
+    copy_orders_data(books_by_order,
+                     orders_by_customer,
+                     completed_orders,
+                     customers_count,
+                     orders_count,
+                     books_count,
+                     static_books_by_order,
+                     static_orders_by_customer);
+    update_stock(books_by_order, completed_orders, books, stock);
     fin.close();
+}
+
+bool has_same_code(char* code_book, char** book)
+{
+    return std::strcmp(code_book, book[0]) == 0;
+}
+
+int find_index_book(char* code_book, char*** books)
+{
+    for (int i = 0; books[i]; i++)
+    {
+        if (has_same_code(code_book, books[i])) return i;
+    }
+    return NOT_FOUND;
+}
+
+void complete_order(int* stock, bool& completed_order)
+{
+    stock[0] -= 1;
+    if (stock[0] >= 0) completed_order = true;
+    else
+    {
+        stock[0] = 0;
+        stock[1] += 1;
+        completed_order = false;
+    }
+}
+
+void find_book(char** books_by_order,
+               bool* completed_orders,
+               char*** books,
+               int** stock)
+{
+    for (int i = 0; books_by_order[i]; i++)
+    {
+        int index_book = find_index_book(books_by_order[i], books);
+        if (index_book != NOT_FOUND)
+        {
+            complete_order(stock[index_book], completed_orders[i]);
+        }
+    }
+}
+
+void update_stock(char*** books_by_order,
+                  bool** completed_orders,
+                  char*** books,
+                  int** stock)
+{
+    for (int i = 0; books_by_order[i]; i++)
+    {
+        find_book(books_by_order[i], completed_orders[i], books, stock);
+    }
+}
+
+void print_dni(std::ofstream& fout, int* customer)
+{
+    fout << "CUSTOMER  " << customer[0] << std::endl;
+    print_line(fout, LINE_WIDTH, '=');
+}
+
+void print_order_information(std::ofstream& fout,
+                             char** books_by_order,
+                             bool* completed_orders,
+                             int number_order)
+{
+    int width = LINE_WIDTH / COLUMNS;
+    bool is_first_print = true;
+    if (is_first_print)
+    {
+        print_text(fout, " ", width - 24);
+        fout << std::right << std::setfill('0') << std::setw(6) << number_order;
+        fout << std::setfill(' ');
+        print_text_right(fout, books_by_order[0], width + 2);
+        if (completed_orders[0] == false) print_text_right(fout, "NOT COMPLETED", width + 4);
+        else print_text_right(fout, "COMPLETED", width + 4);
+        fout << std::endl;
+        is_first_print = false;
+    }
+    for (int i = 1; books_by_order[i]; i++)
+    {
+        print_text_right(fout, books_by_order[i], 2 * width - 16);
+        if (completed_orders[i] == false) print_text_right(fout, "NOT COMPLETED", width + 4);
+        else print_text_right(fout, "COMPLETED", width + 4);
+        fout << std::endl;
+    }
+    print_line(fout, LINE_WIDTH, '-');
+}
+
+void print_customers_orders(std::ofstream& fout,
+                            char*** books_by_order,
+                            int* customer,
+                            bool** completed_orders)
+{
+    int orders_count = customer[1];
+    for (int i = 0; i < orders_count; i++)
+    {
+        print_header(fout);
+        int number_order = customer[2 + i];
+        print_order_information(fout, books_by_order[number_order - 1],
+                                completed_orders[number_order - 1],
+                                number_order);
+    }
+}
+
+void print_header(std::ofstream& fout)
+{
+    int width = LINE_WIDTH / COLUMNS;
+    print_text_right(fout, "Order Number ", width - 15);
+    print_text_right(fout, "Book code", width);
+    print_text_right(fout, "Status", width);
+    fout << std::endl;
+    print_line(fout, LINE_WIDTH, '-');
+}
+
+void print_text_right(std::ofstream& fout, const char* text, int width)
+{
+    fout << std::right << std::setw(width) << text;
+}
+
+
+void order_delivery_report(const char* filepath,
+                           char*** books_by_order,
+                           int** orders_by_customer,
+                           bool** completed_orders)
+{
+    std::ofstream fout;
+    open_output_file(fout, filepath);
+
+    print_title(fout, "ORDER DELIVERY REPORT", LINE_WIDTH);
+    for (int i = 0; orders_by_customer[i]; i++)
+    {
+        print_dni(fout, orders_by_customer[i]);
+        print_customers_orders(fout,
+                               books_by_order,
+                               orders_by_customer[i],
+                               completed_orders);
+    }
+    fout.close();
 }
