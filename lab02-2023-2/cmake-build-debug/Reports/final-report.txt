@@ -36,13 +36,13 @@ No.  DNI                 PRODUCT                                                
 30)  45877001    RDT-761  Horno Microondas con dorador                              5              904.95                   4524.75
 31)  42928709    GLC-370  Video Proyector Power Lite 95                             6              552.24                   3313.44
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               188663
-Total amount by out of stock:                                                                                               0
+Total amount:                                                                                                               188678.52
+Total amount by out of stock:                                                                                               0.00
 ======================================================================================================================================================
 DATE   03/09/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
 ------------------------------------------------------------------------------------------------------------------------------------------------------
- 0)  50375303    CRU-009  Lavavajilla                                               5              2655.78                  OUT OF STOCK
+ 0)  50375303    CRU-009  Lavavajilla                                               5              2655.78                  13278.90
  1)  26290971    PVZ-181  Ventilador circular                                       3              309.77                   929.31
  2)  73535476    FLJ-040  Parlantes portatiles SOUNDSHOOTER                         4              3703.37                  14813.48
  3)  16552775    AWB-345  Deshumedecedor DM-189H                                    6              800.37                   OUT OF STOCK
@@ -60,7 +60,7 @@ No.  DNI                 PRODUCT                                                
 15)  69324480    UOD-420  Mini componente ESX6                                      3              828.94                   2486.82
 16)  59407188    OWN-701  Olla arrocera                                             1              220.82                   220.82
 17)  57263719    OTH-462  Lavadora Semi-Automatica                                  5              531.04                   2655.20
-18)  37110873    FCN-617  Televisor Plasma 60                                       6              4121.05                  OUT OF STOCK
+18)  37110873    FCN-617  Televisor Plasma 60                                       6              4121.05                  24726.30
 19)  96659352    GBJ-693  Radio CD                                                  3              314.20                   942.60
 20)  52097922    UTN-601  Autoradio XAV-601 BT                                      2              562.51                   1125.02
 21)  79901434    CSZ-863  Video Filmadora                                           5              1713.57                  8567.85
@@ -75,8 +75,8 @@ No.  DNI                 PRODUCT                                                
 30)  52097922    XZG-521  Secadora Electrica FAQE7001LW                             4              704.27                   2817.08
 31)  54761731    OTS-581  Galaxy Note 8.0                                           5              2653.10                  13265.50
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               127701
-Total amount by out of stock:                                                                                               48117
+Total amount:                                                                                                               165720.97
+Total amount by out of stock:                                                                                               10113.78
 ======================================================================================================================================================
 DATE   27/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -127,8 +127,8 @@ No.  DNI                 PRODUCT                                                
 43)  17913944    XLF-273  Centro de Lavado a Gas                                    4              2371.95                  9487.80
 44)  57690875    XTE-383  Rack Fijo 32/60                                           6              261.01                   1566.06
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               249706
-Total amount by out of stock:                                                                                               43675
+Total amount:                                                                                                               249725.18
+Total amount by out of stock:                                                                                               43676.87
 ======================================================================================================================================================
 DATE   28/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -138,9 +138,9 @@ No.  DNI                 PRODUCT                                                
  2)  79464412    CJE-310  Mini componente GPX33                                     5              3643.39                  18216.95
  3)  76388967    SJQ-827  Reproductor Multimedia Touch Screen                       5              1719.56                  8597.80
  4)  78922174    TKM-141  Cocina a gas Marsella                                     5              402.24                   2011.20
- 5)  94080926    NMV-644  Lavadora Automatica                                       5              3272.48                  OUT OF STOCK
+ 5)  94080926    NMV-644  Lavadora Automatica                                       5              3272.48                  16362.40
  6)  57263719    BWD-036  Cocina Empotrable Klimatica                               3              1086.34                  3259.02
- 7)  17972674    ZWF-661  Impresora Led                                             1              2731.61                  OUT OF STOCK
+ 7)  17972674    ZWF-661  Impresora Led                                             1              2731.61                  2731.61
  8)  89148118    XLF-273  Centro de Lavado a Gas                                    5              2371.95                  11859.75
  9)  42928709    NSM-283  Cocina a gas FFG3053SL                                    5              936.81                   4684.05
 10)  57690875    CIM-038  Cocina Empotrable Petra                                   3              2544.64                  7633.92
@@ -178,8 +178,8 @@ No.  DNI                 PRODUCT                                                
 42)  95161027    OQI-373  Cocina Empotrable Premio Plus                             1              906.16                   906.16
 43)  62324793    OPJ-039  Secadora de Ropa                                          2              2765.64                  5531.28
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               269951
-Total amount by out of stock:                                                                                               42729
+Total amount:                                                                                                               289062.21
+Total amount by out of stock:                                                                                               23637.21
 ======================================================================================================================================================
 DATE   04/09/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -208,7 +208,7 @@ No.  DNI                 PRODUCT                                                
 21)  69975105    FQG-293  Rapiducha Premiun                                         5              2784.31                  13921.55
 22)  76388967    PFD-286  Refrigeradora cap. 415 litros                             6              2776.02                  16656.12
 23)  77191257    ZWF-661  Impresora Led                                             4              2731.61                  OUT OF STOCK
-24)  91897732    PFD-286  Refrigeradora cap. 415 litros                             2              2776.02                  OUT OF STOCK
+24)  91897732    PFD-286  Refrigeradora cap. 415 litros                             2              2776.02                  5552.04
 25)  36380447    HLR-109  Parlantes inalambricos                                    2              439.47                   878.94
 26)  50375303    VXS-438  Mouse Blue Tooth                                          4              60.11                    240.44
 27)  25171011    DFJ-952  Cocina a gas Prestige 60 INOX                             4              3342.77                  13371.08
@@ -216,8 +216,8 @@ No.  DNI                 PRODUCT                                                
 29)  45783712    YMU-875  Cocina a gas Plermo Quarzo                                4              3232.10                  12928.40
 30)  94080926    SPR-580  Dispensador de Agua                                       5              404.35                   2021.75
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               185164
-Total amount by out of stock:                                                                                               16478
+Total amount:                                                                                                               190728.37
+Total amount by out of stock:                                                                                               10926.44
 ======================================================================================================================================================
 DATE   30/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -251,15 +251,15 @@ No.  DNI                 PRODUCT                                                
 26)  15210391    AQS-362  Teclado Inalambrico USB                                   2              233.05                   466.10
 27)  45877001    KBY-991  Home Theater E4100                                        6              1101.08                  6606.48
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               137279
-Total amount by out of stock:                                                                                               11845
+Total amount:                                                                                                               137291.35
+Total amount by out of stock:                                                                                               11847.66
 ======================================================================================================================================================
 DATE   22/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
 ------------------------------------------------------------------------------------------------------------------------------------------------------
  0)  78757121    OQI-373  Cocina Empotrable Premio Plus                             3              906.16                   2718.48
  1)  71984468    PQH-935  Rack Giratorio 26/32                                      2              94.45                    188.90
- 2)  43488351    XLF-273  Centro de Lavado a Gas                                    5              2371.95                  OUT OF STOCK
+ 2)  43488351    XLF-273  Centro de Lavado a Gas                                    5              2371.95                  11859.75
  3)  15210391    RSE-049  Radio CD/DVD - TV                                         5              4037.51                  20187.55
  4)  78078115    XZR-640  Lavadora-Secadora FWD                                     5              2390.58                  11952.90
  5)  77484838    BTO-226  Friobar                                                   4              863.19                   3452.76
@@ -294,8 +294,8 @@ No.  DNI                 PRODUCT                                                
 34)  94080926    OTW-288  Cavba de Vinos GE cap. 34 botellas                        5              1119.18                  5595.90
 35)  80048864    BWD-036  Cocina Empotrable Klimatica                               3              1086.34                  OUT OF STOCK
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               250827
-Total amount by out of stock:                                                                                               20341
+Total amount:                                                                                                               262705.03
+Total amount by out of stock:                                                                                               8482.68
 ======================================================================================================================================================
 DATE   26/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -307,7 +307,7 @@ No.  DNI                 PRODUCT                                                
  4)  11602775    JJN-837  Lavadora Tecnologia Wobbie                                1              1979.92                  1979.92
  5)  79475585    BWD-036  Cocina Empotrable Klimatica                               5              1086.34                  OUT OF STOCK
  6)  17972674    UWA-476  Autoradio MEX BT3150U                                     4              1191.39                  4765.56
- 7)  71378466    BIT-434  Campana Extractora modelo Glass                           4              375.09                   OUT OF STOCK
+ 7)  71378466    BIT-434  Campana Extractora modelo Glass                           4              375.09                   1500.36
  8)  83505958    MQR-442  Reloj Digital RMM-29                                      1              271.66                   271.66
  9)  77484838    AFL-718  Vinera                                                    1              1664.97                  1664.97
 10)  95161027    VVS-017  Tablets MW 0731                                           5              2599.72                  12998.60
@@ -327,7 +327,7 @@ No.  DNI                 PRODUCT                                                
 24)  94080926    CIM-038  Cocina Empotrable Petra                                   2              2544.64                  5089.28
 25)  54761731    ZVA-180  Refrigeradora 322 litros                                  4              2903.13                  11612.52
 26)  42157219    KWP-672  Televisor UHD TV                                          6              1625.30                  9751.80
-27)  54761731    VZV-827  Refrigeradora Top Mount                                   1              1784.27                  OUT OF STOCK
+27)  54761731    VZV-827  Refrigeradora Top Mount                                   1              1784.27                  1784.27
 28)  29337157    WZD-331  Refrigeradora ECOTT 465 IX                                4              1213.79                  OUT OF STOCK
 29)  73535476    KJX-387  Ventilador de techo                                       4              613.19                   OUT OF STOCK
 30)  77191257    TZY-323  Terma a gas                                               3              2341.01                  7023.03
@@ -341,8 +341,8 @@ No.  DNI                 PRODUCT                                                
 38)  79901434    TXM-139  Televisor LED FULL HD 3D                                  2              1092.95                  OUT OF STOCK
 39)  26976877    XZG-521  Secadora Electrica FAQE7001LW                             3              704.27                   2112.81
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               192796
-Total amount by out of stock:                                                                                               49194
+Total amount:                                                                                                               196096.09
+Total amount by out of stock:                                                                                               45914.86
 ======================================================================================================================================================
 DATE   29/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -379,8 +379,8 @@ No.  DNI                 PRODUCT                                                
 29)  45828535    YMU-875  Cocina a gas Plermo Quarzo                                5              3232.10                  OUT OF STOCK
 30)  71378466    XSD-310  Refrigeradora No frost                                    3              2259.93                  6779.79
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               148525
-Total amount by out of stock:                                                                                               22556
+Total amount:                                                                                                               148537.16
+Total amount by out of stock:                                                                                               22557.82
 ======================================================================================================================================================
 DATE   25/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -405,7 +405,7 @@ No.  DNI                 PRODUCT                                                
 17)  62324793    YJD-279  Cocina a gas Florencia                                    5              1028.43                  5142.15
 18)  13245501    ZWF-661  Impresora Led                                             1              2731.61                  OUT OF STOCK
 19)  87800799    ICX-503  Cocina a gas Roma                                         2              1221.02                  2442.04
-20)  73786035    AQS-362  Teclado Inalambrico USB                                   1              233.05                   OUT OF STOCK
+20)  73786035    AQS-362  Teclado Inalambrico USB                                   1              233.05                   233.05
 21)  58187172    KBY-991  Home Theater E4100                                        6              1101.08                  6606.48
 22)  71378466    OQI-373  Cocina Empotrable Premio Plus                             1              906.16                   906.16
 23)  88995291    HLR-109  Parlantes inalambricos                                    2              439.47                   878.94
@@ -417,19 +417,19 @@ No.  DNI                 PRODUCT                                                
 29)  93160528    DUG-251  Cocina a gas FFG3047SL                                    2              1597.96                  3195.92
 30)  50375303    SJQ-827  Reproductor Multimedia Touch Screen                       2              1719.56                  3439.12
 31)  42798099    RDT-761  Horno Microondas con dorador                              6              904.95                   5429.70
-32)  49087435    AFL-718  Vinera                                                    1              1664.97                  OUT OF STOCK
+32)  49087435    AFL-718  Vinera                                                    1              1664.97                  1664.97
 33)  45783712    SNY-500  Cocina a gas Praga Quarzo                                 5              3297.09                  OUT OF STOCK
 34)  77484838    YGV-332  Impresora Led Color                                       3              2517.66                  7552.98
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               126743
-Total amount by out of stock:                                                                                               67720
+Total amount:                                                                                                               128652.65
+Total amount by out of stock:                                                                                               65828.30
 ======================================================================================================================================================
 DATE   31/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
 ------------------------------------------------------------------------------------------------------------------------------------------------------
  0)  35584593    SSD-176  Refrigeradora Linea Gallery                               4              567.71                   2270.84
  1)  73185299    OTH-462  Lavadora Semi-Automatica                                  3              531.04                   1593.12
- 2)  45783712    YUQ-590  Refrigeradora  CoolStyle 395N Steel                       2              1979.07                  OUT OF STOCK
+ 2)  45783712    YUQ-590  Refrigeradora  CoolStyle 395N Steel                       2              1979.07                  3958.14
  3)  62324793    LDR-510  Mini componente ESX9                                      1              2701.87                  2701.87
  4)  37110873    QUU-384  Lavavajilla Blue Touch                                    4              2545.54                  OUT OF STOCK
  5)  71463316    AWT-354  Galaxy Gear                                               4              3409.22                  13636.88
@@ -452,12 +452,12 @@ No.  DNI                 PRODUCT                                                
 22)  89148118    EBI-299  Cocina a gas Fridare                                      6              2287.57                  OUT OF STOCK
 23)  87813843    OQI-373  Cocina Empotrable Premio Plus                             1              906.16                   906.16
 24)  93845419    QIL-029  Mini componente Shake-5                                   6              2990.55                  17943.30
-25)  67418025    FEG-454  Sillon masajeador                                         2              1695.70                  OUT OF STOCK
+25)  67418025    FEG-454  Sillon masajeador                                         2              1695.70                  3391.40
 26)  69975105    TMJ-043  Lavadora EcoBubble                                        6              2400.79                  14404.74
 27)  97403853    YJD-279  Cocina a gas Florencia                                    3              1028.43                  3085.29
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               136383
-Total amount by out of stock:                                                                                               49218
+Total amount:                                                                                                               143743.49
+Total amount by out of stock:                                                                                               41870.57
 ======================================================================================================================================================
 DATE   05/09/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -470,7 +470,7 @@ No.  DNI                 PRODUCT                                                
  5)  54716824    SPR-580  Dispensador de Agua                                       3              404.35                   1213.05
  6)  55552996    UXG-019  Terma de acumulacion                                      6              934.91                   OUT OF STOCK
  7)  42798099    AQS-362  Teclado Inalambrico USB                                   1              233.05                   OUT OF STOCK
- 8)  80048864    RDT-761  Horno Microondas con dorador                              5              904.95                   OUT OF STOCK
+ 8)  80048864    RDT-761  Horno Microondas con dorador                              5              904.95                   4524.75
  9)  43877279    TYF-885  Videojuego TW 4                                           5              794.14                   OUT OF STOCK
 10)  98589725    VRR-793  Rack Giratorio 32/60                                      1              241.71                   241.71
 11)  22280452    XSD-310  Refrigeradora No frost                                    2              2259.93                  OUT OF STOCK
@@ -486,8 +486,8 @@ No.  DNI                 PRODUCT                                                
 21)  89298238    ICX-503  Cocina a gas Roma                                         3              1221.02                  3663.06
 22)  67418025    YYU-726  Reproductor DVD Portatil                                  6              767.82                   4606.92
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               63828
-Total amount by out of stock:                                                                                               38794
+Total amount:                                                                                                               68358.46
+Total amount by out of stock:                                                                                               34273.97
 ======================================================================================================================================================
 DATE   23/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -516,13 +516,13 @@ No.  DNI                 PRODUCT                                                
 21)  78922174    XBD-314  Cocina a gas Fassina                                      2              1444.90                  2889.80
 22)  87813843    LDR-510  Mini componente ESX9                                      6              2701.87                  16211.22
 23)  78078115    PJG-338  Impresora Mutifuncional Inalambricar                      2              1067.80                  2135.60
-24)  79372768    SAM-013  Cocina a gas FFG3047SL                                    1              2275.18                  OUT OF STOCK
+24)  79372768    SAM-013  Cocina a gas FFG3047SL                                    1              2275.18                  2275.18
 25)  64394265    OTW-288  Cavba de Vinos GE cap. 34 botellas                        5              1119.18                  5595.90
 26)  77642521    YYU-726  Reproductor DVD Portatil                                  2              767.82                   1535.64
-27)  12663268    QFP-254  Calentador electrico instantaneo                          5              180.65                   OUT OF STOCK
+27)  12663268    QFP-254  Calentador electrico instantaneo                          5              180.65                   903.25
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               129561
-Total amount by out of stock:                                                                                               42445
+Total amount:                                                                                                               132750.02
+Total amount by out of stock:                                                                                               39269.15
 ======================================================================================================================================================
 DATE   02/09/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -574,11 +574,11 @@ No.  DNI                 PRODUCT                                                
 44)  53166028    TXM-139  Televisor LED FULL HD 3D                                  3              1092.95                  OUT OF STOCK
 45)  45783712    SSD-176  Refrigeradora Linea Gallery                               6              567.71                   3406.26
 46)  57263719    DOV-560  Impresora Laser Mutifuncion Monocromatica                 4              1203.14                  OUT OF STOCK
-47)  40348917    DFJ-952  Cocina a gas Prestige 60 INOX                             2              3342.77                  OUT OF STOCK
-48)  79140840    QRC-609  Camara de video EOS                                       5              1806.66                  OUT OF STOCK
+47)  40348917    DFJ-952  Cocina a gas Prestige 60 INOX                             2              3342.77                  6685.54
+48)  79140840    QRC-609  Camara de video EOS                                       5              1806.66                  9033.30
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               191078
-Total amount by out of stock:                                                                                               107292
+Total amount:                                                                                                               206811.28
+Total amount by out of stock:                                                                                               91584.83
 ======================================================================================================================================================
 DATE   21/08/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -590,15 +590,15 @@ No.  DNI                 PRODUCT                                                
  4)  62566305    TYF-885  Videojuego TW 4                                           4              794.14                   OUT OF STOCK
  5)  45877001    VVS-017  Tablets MW 0731                                           4              2599.72                  10398.88
  6)  83505958    EJW-346  Campana Extractora                                        3              359.70                   1079.10
- 7)  98140264    QHC-492  Terma Solucion                                            4              1907.23                  OUT OF STOCK
+ 7)  98140264    QHC-492  Terma Solucion                                            4              1907.23                  7628.92
  8)  40348917    WZD-331  Refrigeradora ECOTT 465 IX                                3              1213.79                  OUT OF STOCK
  9)  90365520    KWP-672  Televisor UHD TV                                          6              1625.30                  9751.80
-10)  45783712    QFR-958  Cocina a gas Bavaro                                       3              1607.46                  OUT OF STOCK
+10)  45783712    QFR-958  Cocina a gas Bavaro                                       3              1607.46                  4822.38
 11)  49087435    SJQ-827  Reproductor Multimedia Touch Screen                       1              1719.56                  1719.56
 12)  89429489    VXS-438  Mouse Blue Tooth                                          1              60.11                    60.11
 13)  17913944    IHG-413  Parlant Y pedestal PAM-83                                 4              317.70                   1270.80
 14)  81114108    VRR-793  Rack Giratorio 32/60                                      4              241.71                   966.84
-15)  90237332    PVZ-181  Ventilador circular                                       5              309.77                   OUT OF STOCK
+15)  90237332    PVZ-181  Ventilador circular                                       5              309.77                   1548.85
 16)  40348917    FLJ-040  Parlantes portatiles SOUNDSHOOTER                         2              3703.37                  7406.74
 17)  37110873    UWA-476  Autoradio MEX BT3150U                                     2              1191.39                  2382.78
 18)  55552996    FQG-293  Rapiducha Premiun                                         1              2784.31                  2784.31
@@ -609,7 +609,7 @@ No.  DNI                 PRODUCT                                                
 23)  69639726    OPT-996  Mini componente GPX88                                     3              1367.48                  4102.44
 24)  49087435    PJG-338  Impresora Mutifuncional Inalambricar                      1              1067.80                  1067.80
 25)  79140840    TMN-884  Secadora de mano                                          5              310.65                   OUT OF STOCK
-26)  91897732    WLL-607  Cocina Electronica Convencion                             1              1525.04                  OUT OF STOCK
+26)  91897732    WLL-607  Cocina Electronica Convencion                             1              1525.04                  1525.04
 27)  71984468    JJN-837  Lavadora Tecnologia Wobbie                                5              1979.92                  9899.60
 28)  15210391    HFM-021  Horno Electrico                                           1              726.91                   726.91
 29)  17972674    UTN-601  Autoradio XAV-601 BT                                      1              562.51                   562.51
@@ -631,8 +631,8 @@ No.  DNI                 PRODUCT                                                
 45)  77191257    BWD-036  Cocina Empotrable Klimatica                               5              1086.34                  OUT OF STOCK
 46)  32565207    ZWF-661  Impresora Led                                             6              2731.61                  OUT OF STOCK
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               134731
-Total amount by out of stock:                                                                                               98918
+Total amount:                                                                                                               150271.01
+Total amount by out of stock:                                                                                               83402.20
 ======================================================================================================================================================
 DATE   01/09/2023
 No.  DNI                 PRODUCT                                                  COUNT            PRICE                    TOTAL REVENUE            
@@ -642,7 +642,7 @@ No.  DNI                 PRODUCT                                                
  2)  50365593    LWG-915  Cocina a gas Murano                                       3              1101.47                  OUT OF STOCK
  3)  83236386    UJV-290  Cocina a gas Fassina Plus                                 5              2423.26                  12116.30
  4)  73185299    QHC-492  Terma Solucion                                            3              1907.23                  OUT OF STOCK
- 5)  13245501    VXS-438  Mouse Blue Tooth                                          3              60.11                    OUT OF STOCK
+ 5)  13245501    VXS-438  Mouse Blue Tooth                                          3              60.11                    180.33
  6)  42798099    TMN-884  Secadora de mano                                          5              310.65                   OUT OF STOCK
  7)  32904023    DUG-251  Cocina a gas FFG3047SL                                    4              1597.96                  OUT OF STOCK
  8)  96659352    ADX-669  Refrigeradora cap. 220 litros                             4              1239.38                  4957.52
@@ -669,8 +669,8 @@ No.  DNI                 PRODUCT                                                
 29)  31611146    FVQ-662  Cocina a gas Pro 6300 INOX                                4              1060.68                  OUT OF STOCK
 30)  77191257    ZEX-027  Tablet Xperia Z                                           6              3843.75                  23062.50
 31)  41036366    QVJ-982  Horno Microondas 0.7 p3                                   4              1352.76                  OUT OF STOCK
-32)  79140840    JXD-139  Terma Evolucion Soltu                                     4              586.02                   OUT OF STOCK
+32)  79140840    JXD-139  Terma Evolucion Soltu                                     4              586.02                   2344.08
 33)  49087435    III-576  Campana Extractora Venus Plus                             2              1077.65                  2155.30
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-Total amount:                                                                                                               126039
-Total amount by out of stock:                                                                                               73684
+Total amount:                                                                                                               128570.77
+Total amount by out of stock:                                                                                               71170.57

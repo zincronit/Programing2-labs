@@ -90,8 +90,8 @@ void process_order_and_print(std::ofstream& fout,
                 int& stock,
                 double price,
                 int* dni_orders_count,
-                int& total_amount,
-                int& total_amount_out_of_stock);
+                double& total_amount,
+                double& total_amount_out_of_stock);
 
 
 void print_order_information(std::ofstream& fout,

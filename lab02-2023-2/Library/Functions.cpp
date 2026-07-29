@@ -403,8 +403,8 @@ void process_order_and_print(std::ofstream& fout,
                              int& stock,
                              double price,
                              int* dni_orders_count,
-                             int& total_amount,
-                             int& total_amount_out_of_stock)
+                             double& total_amount,
+                             double& total_amount_out_of_stock)
 {
     int width = LINE_WIDTH / COLUMNS;
     fout << std::setw(width - 13) << dni_orders_count[0];
@@ -413,7 +413,7 @@ void process_order_and_print(std::ofstream& fout,
     fout << std::setw(width - 10) << dni_orders_count[1]
         << std::setw(width) << price;
     stock -= dni_orders_count[1];
-    bool has_stock = stock > 0;
+    bool has_stock = stock >= 0;
     if (has_stock)
     {
         fout << price * dni_orders_count[1] << std::endl;
@@ -434,8 +434,8 @@ void print_order_information(std::ofstream& fout,
                              char** orders_code,
                              int** dni_orders_count)
 {
-    int total_amount = 0;
-    int total_amount_out_of_stock = 0;
+    double total_amount = 0;
+    double total_amount_out_of_stock = 0;
     for (int i = 0; orders_code[i]; i++)
     {
         fout << std::right << std::setw(2) << i << std::left << ")  ";
