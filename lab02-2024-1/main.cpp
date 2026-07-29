@@ -16,5 +16,14 @@ int main()
                                books,
                                stock);
 
+    char*** books_by_order;
+    int** orders_by_customer;
+    bool** completed_orders;
+
+    // bool hola{};
+    // std::cout << hola << std::endl;
+
+
+
     return 0;
 }

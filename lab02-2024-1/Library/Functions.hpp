@@ -37,6 +37,10 @@ void print_data_from_books_file(const char* filepath,
                                 char*** books,
                                 int** stock);
 
+void read_orders_file(const char* filepath,
+                      char*** & books_by_order,
+                      int** & orders_by_customer,
+                      bool** & completed_orders);
 
 
 #endif //LAB02_2024_1_FUNCTIONS_HPP
