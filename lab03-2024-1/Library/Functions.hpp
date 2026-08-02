@@ -33,19 +33,35 @@ void print_books_details(const char* filepath, char*** books, int** stocks);
 bool has_same_dni(int dni, int* customer_record);
 int find_index_customer(int dni, int** customers);
 void append_capacity_for_new_customers(int** & customers, int& customers_count, int& customers_capacity);
-void append_new_customer_with_order(int* customer_record,
+void append_new_customer_with_order(int*& customer_record,
                                     int& customers_count,
-                                    int* orders_count_per_customer,
-                                    int* orders_capacity_per_customer,
+                                    int& orders_count_per_customer,
+                                    int& orders_capacity_per_customer,
                                     int dni,
                                     int order_number);
 
+void append_capacity_for_record_customer(int* & customer_record, int& orders_capacity_per_customer);
+void append_new_orders_to_existing_customers(int* & customer_record,
+                                             int& orders_count_per_customer,
+                                             int& orders_capacity_per_customer,
+                                             int order_number);
+
+void append_capacity_for_orders(char*** & orders, int& orders_count, int& orders_capacity, bool completed_orders);
+
+void append_capacity_for_books_per_order(char** & order,
+                                         int& books_count,
+                                         int& books_capacity,
+                                         bool*& is_book_delivered);
+char** get_order_information(std::ifstream& fin, bool*& is_book_delivered);
 void read_orders_file(std::ifstream& fin, char*** & orders, int** & customers, bool** & completed_orders);
+
+void update_completed_orders(char*** books, int** stocks,char*** orders, bool** completed_orders);
 void order_processing(const char* filepath,
                       char*** books,
                       int** stocks,
                       char*** orders,
                       int** customers,
                       bool** completed_orders);
+
 
 #endif //LAB03_2024_1_FUNCTIONS_HPP
